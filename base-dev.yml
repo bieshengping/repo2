@@ -1,0 +1,38 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/biedada/tuling-springcloud-config-server.git      # 配置Git仓库的地址
+          username:                                                         # Git仓库的账号
+          password:                                                         # Git仓库的密码
+####################################################
+#私有仓库需要用户名密码.
+#测试过程:
+#    根据仓库中的属性配置文件
+#        ms-config-dev.properties
+#        ms-config-production.properties
+#        ms-config-test.properties
+#    来访问:
+#
+#
+#    这时:  如果仓库地址是Https协议,https://gitee.com/biedada/tuling-springcloud-config-server.git ,需要权限,
+#    否则会报: Authentication is required but no CredentialsProvider has been registered  异常
+#    先用 SSH协议地址:  git@gitee.com:biedada/tuling-springcloud-config-server.git
+
+
+
+
+
+
+
+
+
+
+
+
+          
